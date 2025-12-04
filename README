@@ -1,0 +1,6 @@
+##  Data Setup
+
+This project uses the LAPD Crime Dataset (2020–Present).  
+Download from: https://catalog.data.gov/dataset/crime-data-from-2020-to-present
+
+Place the downloaded CSV into the /data folder
