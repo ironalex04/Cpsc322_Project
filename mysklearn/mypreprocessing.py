@@ -61,6 +61,8 @@ def extract_features(df, drop_other=False):
         labels=["child", "teen", "young adult", "adult", "middle age", "senior"]
     )
 
+    # Replace Sex values outside 'M' and 'F' with 'Other/Unknown'
+    df['Vict Sex'] = df['Vict Sex'].apply(lambda x: x if x in ['M', 'F'] else 'Other/Unknown')
 
     # Time of occurrence -> part of day
     def time_to_hour(t):
