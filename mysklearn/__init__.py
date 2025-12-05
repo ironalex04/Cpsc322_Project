@@ -1,2 +1,4 @@
-import mysklearn.mypreprocessing as mp
-print(mp.__file__)
+# Allow imports from the mysklearn package
+from . import myutils
+from . import mypreprocessing
+from . import label_mapping
