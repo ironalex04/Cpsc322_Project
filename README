@@ -3,5 +3,7 @@
 This project uses the LAPD Crime Dataset (2020–Present).  
 Download from: https://catalog.data.gov/dataset/crime-data-from-2020-to-present
 
+This dataset is too big to push to github, so it must be locally installed following these steps:
+
 1. In order to run the code, create a folder named "data" in root dir
 2. Place the downloaded CSV file into the /data folder
