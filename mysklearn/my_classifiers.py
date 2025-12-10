@@ -51,7 +51,7 @@ class MyDecisionTreeClassifier:
         self._default_label = self._majority_vote(y_train)
     
         if not X_train:
-            # edge case — empty dataset
+            # edge case - empty dataset
             self.tree = None
             return
     

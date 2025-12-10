@@ -86,6 +86,15 @@ def extract_features(df, drop_other=False):
     if drop_other:
         # Drop rows where we mapped to "Other" to keep classes cleaner
         df = df[df["Crime Category"] != "Other"].copy()
+        df = df[df["Crime Category"] != "Trafficking"].copy()
+        df = df[df["Crime Category"] != "Kidnapping"].copy()
+        df = df[df["Crime Category"] != "Homicide"].copy()
+        df = df[df["Crime Category"] != "Arson"].copy()
+        df = df[df["Crime Category"] != "Sex Offense"].copy()
+        df = df[df["Crime Category"] != "Weapons"].copy()
+        df = df[df["Crime Category"] != "Threats/Harassment"].copy()
+        df = df[df["Crime Category"] != "Robbery"].copy()
+        df = df[df["Crime Category"] != "Fraud"].copy()
 
     
     # Drop raw columns we no longer need
